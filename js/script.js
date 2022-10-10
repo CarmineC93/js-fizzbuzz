@@ -19,17 +19,25 @@ for (let i = 1; i <= 100; i++){
     }
     //Altrimenti loggherà il semplice numero 
 
-    console.log(number);
+    //Creiamo attraverso .createElement un elemento div, salvandolo in una variabile
+    const col = document.createElement("div");
+    //Assegniamo a questo div una classe
+    col.classList.add("col", "text-center", "fw-bold", "fs-2");
+    //In questo elemento inseriamo il valore di i, salvato nella variabile number
+    col.innerHTML = number;
+    //verifichiamo che si siano creati 100 div con all'interno valori crescenti da 1 a 100 
+    console.log(col);
+    //Spostiamo questo elemento nel DOM attraverso .append()
+    document.querySelector(".row").append(col);
+
+    col.classList.add(number);
+
 }
 
 /* **BONUS 1:**
 Crea un container nel DOM , aggiungendo (attraverso la funzione `append()`) un elemento 
 html con il numero o la stringa corretta da mostrare.
 
-//Creiamo attraverso .createElement un elemento div, salvandolo in una variabile
-//Assegniamo a questo div una classe 
-//In questo elemento inseriamo il valore di i
-//Spostiamo questo elemento nel DOM attraverso .append()
  
 
   **BONUS 2:**

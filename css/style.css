@@ -1,0 +1,17 @@
+.col {
+    height: 100px;
+    background-color: rgb(51, 114, 215);
+    line-height: 100px;
+}
+
+.fizz {
+    background-color: rgb(42, 106, 42);
+}
+
+.buzz {
+    background-color: rgb(194, 194, 94);
+}
+
+.fizzbuzz {
+    background-color: rgb(199, 49, 49);
+}
