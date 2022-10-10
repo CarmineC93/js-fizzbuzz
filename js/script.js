@@ -5,21 +5,38 @@
 
  //Apriamo un loop che vada da 1 a 100 e che proceda con incremento di uno
 for (let i = 1; i <= 100; i++){
+    //creo una variabile che contenga il contatore, non potendo modificarlo direttamente
     let number = i;
+    //Per ogni numero ottenuto SE il numero è divisibile per 3 E per 5 loggherà FizzBuzz
     if(i % 3 == 0 && i % 5 == 0){
-        number = "FizzBuzz";
+        number = "fizzbuzz";
+    //Se divisibile per 3 loggherà Fizz
     } else if (i % 3 == 0){
-        number = "Fizz";
+        number = "fizz";
+    //Se divisibile per 5 loggherà Buzz
     } else if (i % 5 == 0) {
-        number = "Buzz";
+        number = "buzz";
     }
+    //Altrimenti loggherà il semplice numero 
 
     console.log(number);
 }
-    //Per ogni numero ottenuto SE il numero è divisibile per 3 E per 5 loggherà FizzBuzz
 
-    //Se divisibile per 3 loggherà Fizz
+/* **BONUS 1:**
+Crea un container nel DOM , aggiungendo (attraverso la funzione `append()`) un elemento 
+html con il numero o la stringa corretta da mostrare.
 
-    //Se divisibile per 5 loggherà Buzz
+//Creiamo attraverso .createElement un elemento div, salvandolo in una variabile
+//Assegniamo a questo div una classe 
+//In questo elemento inseriamo il valore di i
+//Spostiamo questo elemento nel DOM attraverso .append()
+ 
 
-    //Altrimenti loggherà il semplice numero 
+  **BONUS 2:**
+ Applica stili differenti agli elementi aggiunti al DOM nel *BONUS 1*, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
+ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.*/
+
+ //Creiamo 4 classi in CSS con differenti background per ciascuno dei 4 valori ottenibili dal IF (numero, stringa Fizz, stringaBuzz, stringaFizzBuzz)
+ //Per evitare di dover creare un secondo IF il nome delle 3 classi stringa sarà lo stesso dei valori ottenibili dal primo IF
+ //Assegneremo quindi al div una nuova classe attraverso .classList che sarà uguale al valore attuale della costante number.
+
